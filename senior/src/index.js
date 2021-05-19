@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './styles/index.css';
 import App from './components/App';
-// import * as serviceWorker from './serviceWorker';
 
 // 1
 import {
@@ -14,7 +13,7 @@ import {
 
 // 2
 const httpLink = createHttpLink({
-  uri: 'http://localhost:4000'
+  uri: 'https://graphql-weather-api.herokuapp.com/'
 });
 
 // 3
@@ -30,4 +29,3 @@ ReactDOM.render(
   </ApolloProvider>,
   document.getElementById('root')
 );
-// serviceWorker.unregister();
