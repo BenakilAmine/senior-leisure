@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from "react-router-dom";
 import './styles/index.css';
-import App from './components/App';
-
+import Body from './components/Body';
+import 'antd/dist/antd.css';
 // 1
 import {
   ApolloProvider,
@@ -13,7 +14,7 @@ import {
 
 // 2
 const httpLink = createHttpLink({
-  uri: 'https://graphql-weather-api.herokuapp.com/'
+  uri: 'http://localhost:4000/'
 });
 
 // 3
@@ -25,7 +26,9 @@ const client = new ApolloClient({
 // 4
 ReactDOM.render(
   <ApolloProvider client={client}>
-    <App />
+    <Router>
+      <Body />
+    </Router>
   </ApolloProvider>,
   document.getElementById('root')
 );
