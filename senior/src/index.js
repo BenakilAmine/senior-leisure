@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from "react-router-dom";
 import './styles/index.css';
 import Body from './components/Body';
-import 'antd/dist/antd.css';
 // 1
 import {
   ApolloProvider,
@@ -14,7 +13,7 @@ import {
 
 // 2
 const httpLink = createHttpLink({
-  uri: 'http://localhost:4000/'
+  uri: 'http://localhost:4000/graphql'
 });
 
 // 3

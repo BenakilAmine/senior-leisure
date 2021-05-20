@@ -1,7 +1,7 @@
 import { RequestOptions, RESTDataSource } from 'apollo-datasource-rest'
 import camelCaseKeys from 'camelcase-keys'
 
-const ACCESS_KEY = '9d8910ead74d9a3e0931ca9881f4b9cd'
+const ACCESS_KEY = '4d18c480fbbaa5da7e9b49b2b37f8262'
 const API_URL = 'https://api.openweathermap.org/data/2.5/'
 
 export class WeatherAPI extends RESTDataSource {

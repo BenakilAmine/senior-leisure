@@ -1,8 +1,5 @@
 import React from 'react'
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
     Link
 } from "react-router-dom";
 import "./header.css"
@@ -10,7 +7,7 @@ import { Layout, Menu } from 'antd';
 const { Header  } = Layout;
 function HeaderComponent() {
     return (
-        <Header theme="light" style={{maxWidth: "1100px", zIndex: 1 }}>
+        <Header theme="light" style={{maxWidth: "1100px", zIndex: 1,paddingLeft:"calc(100vw - 1300px)" }}>
             <div className="logo" />
             <Menu mode="horizontal" defaultSelectedKeys={['1']}>
                 <Menu.Item key="1">

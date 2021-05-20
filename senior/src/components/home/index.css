@@ -1,0 +1,20 @@
+h1 {
+  font-size: 40px !important;
+  font-weight: bold !important;
+  color: #f28581 !important;
+  margin: 0;
+}
+.site-layout-background > h1 {
+  color: #324a58 !important;
+  font-size: 50px !important;
+  margin: 0;
+}
+
+.site-page-header-ghost-wrapper {
+  background-color: #fffcfc;
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 0px 25px rgb(184, 184, 184);
+  vertical-align: middle;
+  padding: 40px 0;
+}

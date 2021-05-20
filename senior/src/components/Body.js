@@ -1,12 +1,11 @@
+import './App.less';
 import Home from './home/Home';
 import HeaderComponent from './header/Header';
 import FooterComponent from './footer/Footer';
-import { Layout, Breadcrumb } from 'antd';
+import { Layout } from 'antd';
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import Activite from './activite/Activite';
 import Contact from './contact/Contact';
@@ -14,9 +13,9 @@ const {Content } = Layout;
 
 function Body() {
   return (
-    <Layout  style={{margin: "auto",maxWidth: "1100px"}}>
+    <Layout theme="light"  style={{margin: "auto"}}>
       <HeaderComponent />
-      <Content className="site-layout" style={{maxWidth: "1100px", padding: '0 50px', margin: "auto" }}>
+      <Content className="site-layout">
         <Switch>
           <Route exact path="/">
             <Home/>
